@@ -41,11 +41,14 @@ body {
 	background-size: cover;
 
 	&.menu-show {
-		overflow: hidden;
-		position: fixed;
-		height: 100%;
-		width: 100%;
-	}
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;   
+  overflow-y: auto; 
+ z-index: 9999;    
+}
 }
 
 span {
