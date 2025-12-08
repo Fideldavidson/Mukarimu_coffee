@@ -4,9 +4,14 @@
 }
 
 /* Ensure body is scrollable */
+/* Ensure body is scrollable */
+html,
 body {
     overflow-y: auto !important;
+    overflow-x: hidden !important;
     -webkit-overflow-scrolling: touch !important;
+    height: auto !important;
+    min-height: 100vh !important;
 }
 
 /* Fix for potential stuck menu class */

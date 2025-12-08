@@ -9,7 +9,7 @@ AOS.init({
 
 	// parralax
 	// only init on non-mobile (md and up) because it breaks vertical scroll on mobile
-	if ($(window).width() > 991) {
+	if ($(window).width() > 1199 && !('ontouchstart' in document.documentElement)) {
 		$(window).stellar({
 			responsive: true,
 			parallaxBackgrounds: true,
@@ -24,7 +24,7 @@ AOS.init({
 
 	// Scrollax
 	// Disable Scrollax on mobile
-	if ($(window).width() > 991) {
+	if ($(window).width() > 1199 && !('ontouchstart' in document.documentElement)) {
 		$.Scrollax();
 	}
 
