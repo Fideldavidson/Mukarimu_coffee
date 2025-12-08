@@ -1,0 +1,18 @@
+/* Fix for mobile scrolling issues */
+.owl-carousel {
+    touch-action: pan-y !important;
+}
+
+/* Ensure body is scrollable */
+body {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+/* Fix for potential stuck menu class */
+body.menu-show {
+    position: static !important;
+    overflow: auto !important;
+    height: auto !important;
+    width: auto !important;
+}

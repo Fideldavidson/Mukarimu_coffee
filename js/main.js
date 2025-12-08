@@ -23,8 +23,10 @@ AOS.init({
 	}
 
 	// Scrollax
-	$.Scrollax();
-
+	// Disable Scrollax on mobile
+	if ($(window).width() > 991) {
+		$.Scrollax();
+	}
 
 	var fullHeight = function () {
 
@@ -46,8 +48,7 @@ AOS.init({
 	};
 	loader();
 
-	// Scrollax
-	$.Scrollax();
+	// Scrollax removed duplicate call
 
 	var carousel = function () {
 		$('.home-slider').owlCarousel({
