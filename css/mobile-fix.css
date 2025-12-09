@@ -5,14 +5,12 @@
 
 /* Ensure body is scrollable */
 /* Ensure body is scrollable */
-html,
+/* Ensure body doesn't scroll horizontally but allows vertical scroll */
 body {
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    height: auto !important;
-    min-height: 100vh !important;
+    overflow-x: hidden;
+    width: 100%;
 }
+
 
 /* Fix for potential stuck menu class */
 body.menu-show {
