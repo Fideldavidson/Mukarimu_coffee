@@ -44,6 +44,9 @@ AOS.init({
 			if ($('#ftco-loader').length > 0) {
 				$('#ftco-loader').removeClass('show');
 			}
+			// Safety: Ensure body is scrollable even if something goes wrong
+			$('body').css('overflow', 'auto');
+			$('body').css('overflow-x', 'hidden');
 		}, 1);
 	};
 	loader();
@@ -60,7 +63,12 @@ AOS.init({
 			nav: false,
 			autoplayHoverPause: false,
 			items: 1,
+			items: 1,
 			navText: ["<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
+			// Ensure touch events are not hijacked
+			touchDrag: true,
+			mouseDrag: true,
+			pullDrag: true,
 			responsive: {
 				0: {
 					items: 1,
