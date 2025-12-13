@@ -20,6 +20,13 @@ body.menu-show {
     width: auto !important;
 }
 
+/* --- Fix for Awards Section Background Image Positioning --- */
+#ftco-awards {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
 /* --- Fix for Awards Section Background on Mobile --- */
 @media (max-width: 991.98px) {
     #ftco-awards .overlay {
