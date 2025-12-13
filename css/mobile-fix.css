@@ -19,3 +19,13 @@ body.menu-show {
     height: auto !important;
     width: auto !important;
 }
+
+/* --- Fix for Awards Section Background on Mobile --- */
+@media (max-width: 991.98px) {
+    #ftco-awards .overlay {
+        /* Increase opacity from 0.6 to 0.85 for better contrast */
+        opacity: 0.85 !important;
+        /* Optional: use a gradient to make the center darker */
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%) !important;
+    }
+}
